@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações</title>
+</head>
+<body>
+    <h1>outras formatações</h1>
+    <h2>código-fonte / pré-formatação</h2>
+    <p>o comando <code>document.getElementById ('teste')</code> é escrito em linguagem javascript</p> <!--o comando code, ajuda a deixar mais fácil e "clean" de ler comandos como o citado acima de javascript, com o devido espaçamento etc, fonte mono-espaçada--> <p>apaguei o código todo :(</p> 
+    <p><code>document.getElementbyid('teste')</code></p> <p>não vou escrever td dnv fodasse, mais atenção na próxima vez, enfim, o código acima já demonstra o objetivo que ele quis passar em relação a tag "code"</p> <code><pre>
+        import pyodbc
+
+dados_conexao = (
+    "Driver={SQL Server};"
+    "Server=DESKTOP-T2JV7P5;"
+    "Database=PythonSQL;"
+)
+
+conexao = pyodbc.connect(dados_conexao)
+print("Conexão Bem Sucedida")
+
+cursor = conexao.cursor()
+
+    </pre>
+        </code> <!--se eu deixar apenas a tag code, no site o código estará todo enfileirado e "quebrado" logo uso a tag pre para deixa-lo exatamente como no visual studio (cod aleatorio da net) shift e tab para tirar os espaços do codigo no site, ou so arrastar, seta pra trás enfim. o pre deve ser usado com a tag code inclusa do codigo-->
+        <h2>citações</h2>
+        <p><q>como diria o pai de um amigo: o computador é um burro muito rapido</q></p> <!--tag q para criar uuma citação, usar o q em vez das aspas para dar forma a citação--> <h2>citações completas</h2> <p>segundo o autor do livro, no livro html para leigos:</p>
+
+        <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0"> a diferença entre elementos online e um bloco de texto é importante, os elementos html neste capitulo descrevem os blocos de texto.</blockquote> <!--a citação vai meio pro lado no blockquote, e dentro do blockquote, coloco o parametro cite, assim citando de onde foi retirado a frase/livro etc, o link não vai ser clicavel etc, mas, o site e o google vai entender q a frase é de determinado lugar--> <h2>abreviações</h2>
+        <p>to estudando <abbr title="hypertext markup language">html</abbr> e <abbr title="cascading style sheets">css</abbr>, é divertido</p> <!--a tag abbr, serve para dar o significado completo de tal abreviação, no site quando se passa o mouse por cima, aparece o siginificado da abreviação--> <h2>texto invertido</h2>
+        <p><bdo dir="rtl">to aprendendo a criar coisas em html</bdo></p> <!--como criar texto invertido, fodasse mais blz "bdo l ou r"-->
+    
+</body>
+</html>
