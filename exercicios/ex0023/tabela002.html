@@ -14,13 +14,22 @@
             border-collapse: collapse;
         }
         td, th {
-            border: 1px solid black;
+            border: 2px solid black;
             padding: 5px;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: darkslategray;
             color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: darkgrey;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+            text-decoration: underline;
         }
 
         td.numero {
@@ -30,17 +39,27 @@
         tfoot td {
             text-align: right;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+            border-bottom: 0px;
+        }
     </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     estado
                 </th>
-                <th>
+                <th scope="col" style="width: 50px;">
                     população
                 </th>
             </tr>
@@ -177,7 +196,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td>342.765.098</td>
             </tr>
         </tfoot>
