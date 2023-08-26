@@ -1,0 +1,1 @@
+n vai dar pra ver os dados, aprende php primeiro depois a gente ve
