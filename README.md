@@ -4,4 +4,6 @@
 
  <a href="https://vitorhpaivag.github.io/Projetin-Android/"> Projetinho do Android</a>
 
-<a href="https://vitorhpaivag.github.io/Projetin-cordel/"> Projetinho do cordel</a>
+<a href="https://vitorhpaivag.github.io/Projetin-cordel/"> Projetinho do Cordel</a>
+
+<a href="https://vitorhpaivag.github.io/projetin-social/"> Projetinho do Social</a>
