@@ -2,6 +2,99 @@
 
 /*todas as demais mídias*/
 
-@media print {
+/*
+typical device breakpoints
+telas pequenas: até 600px
+celular: 600px até 768px
+tablet: 768px até 1024px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+de acordo com a w3c
+*/
+
+@media print /*impressão*/ {
+
+    * {
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); 
+        /*desnecessário*/
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'impressão feita atráves do site www.xxxxx-xxxxx.com';
+        text-decoration: overline;
+        text-align: center;
+        display: block;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone, #tablet, #pc, #televisão {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) /*tablets*/ {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
     
+    #phone, #print, #pc, #televisão {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) /*desktop*/ {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone, #print, #tablet, #televisão {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) /*grandes telas*/ {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone, #print, #pc, #tablet {
+        display: none;
+    }
+
+    #televisão {
+        display: block;
+    }
+
 }
