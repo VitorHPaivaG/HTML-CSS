@@ -20,8 +20,23 @@ h1 {
     padding: 10px;
 }
 
-menu {
+#burger {
+    background-color: rgb(35, 34, 34);
     display: block;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 }
 
 menu > li {
